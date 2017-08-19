@@ -1,0 +1,23 @@
+## Commands to be used regularly ##
+
+Command: less
+purpose: To read the file contents
+
+example: less file_name
+
+Options with 'less' command after opening the file:
+ \search_character
+ \G
+ \1G
+ \n
+after this you can use 'h' and 'q'
+
+Command: file
+purpose: To display the file type
+
+example: file file_name
+example output:
+[vrahul@gvr4localhost dumps-mysql]$ file fulldump_05232017.sql.gz
+fulldump_05232017.sql.gz: gzip compressed data, from Unix, last modified: Tue May 23 05:57:33 2017
+
+Architecture of Linux file structure: http://linuxcommand.org/lc3_lts0040.php
