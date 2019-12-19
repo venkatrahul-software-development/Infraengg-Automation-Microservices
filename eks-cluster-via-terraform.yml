@@ -38,13 +38,13 @@ module "eks" {
     version = "1.13"
 }
 
-# Needed for cluster-autoscaler
+# Resource for cluster-autoscaler
 resource "aws_iam_role_policy_attachment" "workers_AmazonEC2ContainerRegistryPowerUser" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
   role       = "${module.eks.worker_iam_role_name}"
 }
 
-# Create S3 bucket for KMS
+# S3 bucket for KMS
 resource "aws_s3_bucket" "vault-unseal" {
     bucket = "vault-unseal.${var.region}.${var.bucket_domain}"
     acl    = "private"
@@ -54,7 +54,7 @@ resource "aws_s3_bucket" "vault-unseal" {
     }
 }
 
-# Create KMS key
+# Creating KMS key
 resource "aws_kms_key" "bank_vault" {
     description = "KMS Key for bank vault unseal"
 }
