@@ -1,7 +1,7 @@
 # This creates the IAM role used in variables.tf
 
-resource "aws_iam_role" "symboticware-employee" {
-  name = "symboticware-employee"
+resource "aws_iam_role" "interview_company-employee" {
+  name = "interview_company-employee"
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.

@@ -8,7 +8,7 @@ variable "region" {
 
 
 variable "user_arn" {
-  default ="arn:aws:iam::047109936880:user/symboticware-employee" # IAM account of symboticware employee
+  default ="arn:aws:iam::047109936880:user/interview_company-employee" # IAM account of interview_company employee
 }
 
 variable key_spec {

@@ -1,4 +1,4 @@
-# This file specifices whihc cloud provider to be used along with the access credentials whihc are retreived via the AWS config file
+# This file specifices the cloud provider to be used along with the access credentials which are retreived via the AWS config file
 
 provider "aws" {
   profile = "default" # Generally we have customized profile's in production environemnts
